@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!--关于es的配置信息-->
+    <property>
+        <name>miniso_comment_es_index</name>
+        <value>miniso-comment-info</value>
+    </property>
+
+    <property>
+        <name>miniso_comment_es_type</name>
+        <value>commentInfo</value>
+    </property>
+
+    <property>
+        <name>miniso_item_es_index</name>
+        <value>miniso-item-info</value>
+    </property>
+
+    <property>
+        <name>miniso_item_es_type</name>
+        <value>itemInfo</value>
+    </property>
+
+    <property>
+        <name>miniso_saleinfo_es_index</name>
+        <value>saleInfo</value>
+    </property>
+
+    <!--关于算法组的情感算法配置-->
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>dev3,dev2,dev1</value>
+    </property>
+
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>2181</value>
+    </property>
+
+    <property>
+        <name>zookeeper.session.timeout</name>
+        <value>120000</value>
+    </property>
+
+    <!--Spark Conf-->
+    <property>
+        <name>spark.yarn.queue</name>
+        <value>ds.radar</value>
+    </property>
+
+    <property>
+        <name>spark.driver.memory</name>
+        <value>1024m</value>
+    </property>
+    <property>
+        <name>spark.executor.memory</name>
+        <value>2048m</value>
+    </property>
+
+    <property>
+        <name>spark.cores.max</name>
+        <value>50</value>
+        <description></description>
+    </property>
+    <property>
+        <name>spark.num.executor</name>
+        <value>4</value>
+    </property>
+    <property>
+        <name>spark.executor.core</name>
+        <value>6</value>
+    </property>
+
+    <!--spark local
+    <property>
+        <name>spark.master.url</name>
+        <value>spark://rocket16:7077</value>
+        <description></description>
+    </property>-->
+
+    <property>
+        <name>spark.akka.timeout</name>
+        <value>600</value>
+        <description></description>
+    </property>
+    <property>
+        <name>spark.default.parallelism</name>
+        <value>40</value>
+        <description></description>
+    </property>
+    <property>
+        <name>spark.speculation.multiplier</name>
+        <value>1.5</value>
+        <description></description>
+    </property>
+
+    <property>
+        <name>spark.default.user</name>
+        <value>zeus</value>
+        <description></description>
+    </property>
+    <property>
+        <name>spark.yarn.jar</name>
+        <value>/usr/hdp/current/spark-client/lib/spark-assembly-1.2.1.2.2.6.0-2800-hadoop2.6.0.2.2.6.0-2800.jar</value>
+        <description></description>
+    </property>
+
+    <property>
+        <name>spark.master.url</name>
+        <value>spark://dev1:7077,dev3:7077</value>
+    </property>
+
+</configuration>

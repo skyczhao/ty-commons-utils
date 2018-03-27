@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!--关于es的配置信息-->
+    <property>
+        <name>miniso_comment_es_index</name>
+        <value>miniso-comment-info</value>
+    </property>
+
+    <property>
+        <name>miniso_comment_es_type</name>
+        <value>commentInfo</value>
+    </property>
+
+    <property>
+        <name>miniso_item_es_index</name>
+        <value>miniso-item-info</value>
+    </property>
+
+    <property>
+        <name>miniso_item_es_type</name>
+        <value>itemInfo</value>
+    </property>
+
+    <property>
+        <name>miniso_common_es_type</name>
+        <value>commonInfo</value>
+    </property>
+
+    <property>
+        <name>miniso_sale_es_type</name>
+        <value>saleInfo</value>
+    </property>
+
+    <property>
+        <name>es.miniso.cluster</name>
+        <value>radar_family_es_cluster</value>
+    </property>
+
+    <property>
+        <name>es.miniso.cluster.hosts</name>
+        <value>hadoop11:9303,hadoop15:9303,hadoop19:9303</value>
+    </property>
+
+    <!--关于算法组的情感算法配置-->
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>hadoop5,hadoop9,admincenter1,rocket2,rocket3</value>
+    </property>
+
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>2181</value>
+    </property>
+
+    <property>
+        <name>zookeeper.session.timeout</name>
+        <value>135000</value>
+    </property>
+
+    <property>
+        <name>spark.yarn.queue</name>
+        <value>ds.miniso</value>
+    </property>
+
+    <property>
+        <name>spark.master.url</name>
+        <value>spark://rocket16:7077</value>
+        <description></description>
+    </property>
+
+    <property>
+        <name>spark.cores.max</name>
+        <value>10</value>
+        <description></description>
+    </property>
+
+    <property>
+        <name>spark.executor.memory</name>
+        <value>2048m</value>
+    </property>
+
+    <property>
+        <name>spark.num.executor</name>
+        <value>8</value>
+    </property>
+
+    <property>
+        <name>spark.executor.core</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>spark.default.user</name>
+        <value>dota</value>
+        <description></description>
+    </property>
+
+    <!--电商ETL Spark任务配置-->
+    <property>
+        <name>spark.e-commerce.driver.memory</name>
+        <value>1024m</value>
+    </property>
+    <property>
+        <name>spark.e-commerce.executor.memory</name>
+        <value>4096m</value>
+    </property>
+    <property>
+        <name>spark.e-commerce.num.executor</name>
+        <value>3</value>
+    </property>
+    <property>
+        <name>spark.e-commerce.executor.core</name>
+        <value>3</value>
+    </property>
+
+</configuration>
+
